@@ -9,25 +9,24 @@
         /* Additional CSS for ASCII art and boxes */
         .ascii-art-container {
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
-            margin: 20px 0; /* Space around the ASCII art */
+            height: 100%; /* Full height to center vertically */
         }
 
         .ascii-art {
             font-family: monospace;
             white-space: pre; /* Preserve whitespace for ASCII art */
             color: #fff; /* Match the text color */
+            margin: 0 20px; /* Space between ASCII art and boxes */
         }
 
         .info-boxes {
             display: flex;
-            justify-content: space-between;
             width: 100%;
             max-width: 800px; /* Limit the width of the boxes */
-            margin-top: 20px;
+            justify-content: space-between; /* Space out the boxes */
         }
 
         .info-box {
@@ -35,7 +34,7 @@
             border-radius: 8px;
             padding: 20px;
             color: #fff;
-            width: 48%; /* Two boxes side by side */
+            width: 45%; /* Adjust width to fit within the container */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow */
         }
 
@@ -96,21 +95,18 @@
 
     <div class="content">
         <div class="ascii-art-container">
+            <div class="info-box">
+                <h3>Add our bot to your server</h3>
+                <p>The most secure verify bot out there.</p>
+            </div>
             <div class="ascii-art">
                 /\_/\  <br>
                ( o.o ) <br>
                 > ^ < <br>
             </div>
-
-            <div class="info-boxes">
-                <div class="info-box">
-                    <h3>Add our bot to your server</h3>
-                    <p>The most secure verify bot out there.</p>
-                </div>
-                <div class="info-box right-box">
-                    <h3>Who made it?</h3>
-                    <p>.yvng__ on Discord</p>
-                </div>
+            <div class="info-box right-box">
+                <h3>Who made it?</h3>
+                <p>.yvng__ on Discord</p>
             </div>
         </div>
 
